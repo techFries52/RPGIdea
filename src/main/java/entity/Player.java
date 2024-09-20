@@ -16,6 +16,7 @@ public class Player extends Entity{
 
     public final int screenX;
     public final int screenY;
+    public int hasKey = 0;
 
     public Player (GamePanel gp, KeyHandler keyH){
 
@@ -26,12 +27,16 @@ public class Player extends Entity{
         screenY = gp.screenHeight/2 - gp.tileSize/2;
 
         solidArea = new Rectangle(8,16,16,16);
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
 
         setDefaultValues();
         getPlayerImage();
 
     }
 
+
+        // Loads the images from resource folder
     public void getPlayerImage(){
 
         try{
@@ -54,6 +59,8 @@ public class Player extends Entity{
         direction = "down";
     }
 
+
+        // Method to update where the Character is
     public void update(){
 
         if(keyH.upPressed || keyH.downPressed ||
@@ -73,6 +80,10 @@ public class Player extends Entity{
                 // Check tile collision
             collisionOn = false;
             gp.collisionHandler.checkTile(this);
+
+                // Check Object collision
+            int objIndex = gp.collisionHandler.checkObject(this,true);
+            pickUpObject(objIndex);
 
                 // If Collision is false, player can move
             if(!collisionOn){
@@ -104,6 +115,32 @@ public class Player extends Entity{
         }
     }
 
+        // Method to pick up objects
+    public void pickUpObject(int i) {
+        if(i != 999){
+            String objectName = gp.obj[i].objectName;
+
+
+            switch (objectName){
+                case "Key":
+                    hasKey++;
+                    gp.obj[i] = null;
+                    break;
+                case "Door":
+                    if(hasKey > 0){
+                        hasKey--;
+                        gp.obj[i] = null;
+                    }
+                    break;
+                case "Boots":
+                    speed += 4;
+                    gp.obj[i] = null;
+            }
+        }
+    }
+
+
+        // Method to display the Character
     public void draw(Graphics2D g2) {
 //        g2.setColor(Color.white);
 //        g2.fillRect(x,y,gp.tileSize, gp.tileSize);

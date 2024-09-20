@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d42a246-cf2f-4da7-b81d-f6c17e62d770" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/comdev/CollisionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/comdev/AssetSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Chest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Door.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comdev/CollisionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comdev/CollisionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/comdev/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comdev/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comdev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comdev/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tiles/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tiles/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/maps/world01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/maps/world01.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +51,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Code-D-Drive/RPGIdea"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code-D-Drive/RPGIdea&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="RPGIdea" />
